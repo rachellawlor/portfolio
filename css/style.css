@@ -55,7 +55,7 @@ li{
 footer {
   width: 100%;
   grid-column-start: 1;
-  grid-column-end: -1;
+  grid-column-end: 4;
   text-align: center;
   color: white;
   background-color: darkblue;
@@ -177,7 +177,7 @@ footer {
   background-color: #0000ff;
   color: white;
   grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 
  .gallerycontainer{
@@ -248,6 +248,10 @@ footer {
 
 body {
   background-color: #f1f1f1;
+}
+
+.flipcard{
+  display: none;
 }
 
 @media only screen and (min-width: 700px) {
@@ -356,49 +360,6 @@ body {
     padding-bottom: 40px;
   }
 
-  /* .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    grid-column: 1/ span 1;
-    grid-row: 3/ span 1;
-  }
-
-   .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-
-   .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-
-  /* Style the back side */
-   .flip-card-back {
-    background-color: darkblue;
-    color: white;
-    transform: rotateY(180deg);
-  }
 
 form{
   grid-column-start: 1;
@@ -412,6 +373,11 @@ label{
   display: inline-block;
   width: 100%;
   padding: 5px;
+}
+
+.footer{
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 }
@@ -542,7 +508,7 @@ label{
    footer {
      width: 100%;
      grid-column-start: 1;
-     grid-column-end: -1;
+     grid-column-end: 4;
      text-align: center;
      color: white;
      background-color: darkblue;
@@ -600,13 +566,11 @@ label{
      font-size: 30px;
    }
    .contactnav{
-     color: white;
      display: flex;
      display: inline-flex;
-     padding-right: 900px;
-     font-size: 35px;
+     color: darkblue;
    }
-#prof {
+#parallax {
   background-attachment: fixed;
   background-image: url(../images/map.jpg);
   background-position: center;
@@ -616,5 +580,5 @@ label{
   width: 1500px;
   grid-column: 1 / span -1;
 }
-
+/* https://www.w3schools.com/howto/howto_css_parallax.asp */
 }
