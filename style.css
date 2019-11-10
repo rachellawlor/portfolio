@@ -1,0 +1,585 @@
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: relative;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+body{
+  background-color: #e6e6e6;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 17px;
+  color: darkblue;
+
+}
+.nav a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+  color: darkblue;
+}
+nav a.here{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+
+}
+.header {
+  grid-column: 1 / span 2;
+  color: darkblue;
+  font-size: 20px;
+  text-align: center;
+}
+
+li{
+  display: flex;
+  display: block;
+  padding-bottom: 10px;
+
+}
+footer {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  color: white;
+  background-color: darkblue;
+  padding-bottom: 50px;
+}
+.firsttitles {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  text-align: center;
+  line-height: 2;
+  font-size: 20px;
+}
+.firstcontent {
+  grid-column-start: 2;
+  font-size: 15px;
+}
+.titles2{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  line-height: 2;
+  font-size: 35px;
+  text-align: center;
+}
+.content2{
+  grid-column-start: 2;
+  font-size: 20px;
+  display:none;
+}
+.titles3{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  line-height: 2;
+  font-size: 35px;
+  text-align: center;
+}
+.content3{
+  grid-column-start: 2;
+  font-size: 20px;
+  display:none;
+}
+.welcome{
+  border: 3px solid darkblue;
+  background-color: darkblue;
+  color: white;
+  padding-bottom: 10px;
+}
+.profile{
+  border: 3px solid #0000cc;
+  background-color: #0000cc;
+  color: white;
+  padding-bottom: 10px;
+}
+.services{
+  border: 3px solid #0000ff;
+  background-color: #0000ff;
+  color: white;
+  padding-bottom: 10px;
+}
+.resources{
+  border: 3px solid #3333ff;
+  background-color: #3333ff;
+  color: white;
+  padding-bottom: 10px;
+}
+.contact{
+  border: 3px solid #4d4dff;
+  background-color: #4d4dff;
+  color: white;
+  padding-bottom: 10px;
+}
+.footer {
+  grid-column: 1 / span -1;
+  width: 100%,
+  color: white;
+}
+
+.professional{
+  border: 3px solid #0000cc;
+  background-color: #0000cc;
+  color: white;
+  padding-bottom: 10px;
+}
+.responsive{
+  border: 3px solid  #3333ff;
+  background-color:  #3333ff;
+  color: white;
+  padding-bottom: 10px;
+}
+.quality{
+  border: 3px solid  #4d4dff;
+  background-color:  #4d4dff;
+  color: white;
+  padding-bottom: 10px;
+}
+.individuals{
+  border: 3px solid #0000cc;
+  background-color: #0000cc;
+  color: white;
+  padding-bottom: 10px;
+}
+.business{
+  border: 3px solid #3333ff;
+  background-color: #3333ff;
+  color: white;
+  padding-bottom: 10px;
+}
+.tax{
+  border: 3px solid #6666ff;
+  background-color: #6666ff;
+  color: white;
+  padding-bottom: 10px;
+}
+.things{
+  border: 3px solid darkblue;
+  background-color: darkblue;
+  color: white;
+  padding-bottom: 10px;
+}
+.form{
+  background-color: #0000ff;
+  color: white;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+ .gallerycontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#gallery {
+  -webkit-filter: drop-shadow(8px 8px 12px gray); /* Safari */
+  filter: drop-shadow(8px 8px 12px gray);
+}
+/* https://www.w3schools.com/cssref/css3_pr_filter.asp */
+
+
+
+#animation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  grid-column-start: 1;
+  padding-top: 10px;
+  color: #00004d;
+  animation-name: angry-animation;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  font-size: 60px;
+}
+@keyframes angry-animation {
+  0%{
+    color:#3333ff;
+  }
+  100%{
+    color:darkblue;
+  }
+}
+
+
+
+.cool {
+  color: darkblue;
+  grid-column: 1 / -1;
+  font-size: 5em;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+.cool {
+  text-align: center;
+}
+/* https://cssnewbie.com/10-beautiful-css-text-effects/#.XcbTc0VKhZ2 */
+
+body {
+  background-color: #f1f1f1;
+}
+
+.flipcard{
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100vw;
+  }
+  .nav a {
+    display: inline-flex;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+    color: darkblue;
+  }
+  li{
+    display: flex;
+    display: inline-flex;
+    padding-bottom: 10px;
+    color: darkblue;
+
+  }
+  .header{
+    grid-column: 1 / span 2;
+    color: darkblue;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .firsttitles{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 35px;
+    padding-bottom: 50px;
+  }
+  .firstcontent{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    font-size: 20px;
+  }
+  .titles2{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    line-height: 2;
+    font-size: 35px;
+    text-align: center;
+  }
+  .content2{
+    grid-column-start: 2;
+    font-size: 20px;
+    display:none;
+  }
+  .titles3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    line-height: 2;
+    font-size: 35px;
+  }
+  .content3{
+    grid-column-start: 2;
+    font-size: 20px;
+    display:block;
+  }
+  .gallerycontainer{
+   display: grid;
+   grid-template-columns: 3fr 3fr;
+ }
+  .cash{
+    grid-column-start: 1;
+  }
+  .college{
+    grid-column-start: 2;
+  }
+  .credit{
+    grid-column-start: : 3;
+  }
+  .home{
+    grid-column-start: 1;
+   }
+  .taxation{
+    grid-column-start: : 2;
+  }
+  .business{
+    grid-column-start: : 3;
+
+  }
+   .auto{
+    grid-column-start: 1;
+  }
+  .insurance{
+    grid-column-start: 2;
+  }
+   .paycheck{
+    grid-column-start: 3;
+  }
+  .individuals{
+    font-size: 24px;
+    padding-bottom: 50px;
+  }
+  .business{
+    font-size: 24px;
+    padding-bottom: 40px;
+  }
+  .tax{
+    font-size: 24px;
+    padding-bottom: 40px;
+  }
+
+
+form{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  text-align: center;
+}
+
+label{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+}
+
+.footer{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+}
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: /* Your code here - set to default setting */
+    transition: /* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
+ @media only screen and (min-width: 1000px) {
+   .container{
+     display: grid;
+     grid-template-columns: 1fr 2fr 2fr;
+     grid-column-gap: 40px;
+     width: 100vw;
+   }
+   .nav a {
+     display: inline-flex;
+     flex-direction: row;
+     color: #f2f2f2;
+     text-decoration: none;
+     font-size: 17px;
+     color: darkblue;
+   }
+   li{
+     display: flex;
+     display: inline-flex;
+     padding-bottom: 10px;
+
+   }
+
+   .header{
+     grid-column: 1 / span 2;
+     color: darkblue;
+     font-size: 30px;
+     text-align: center;
+   }
+   .firsttitles{
+     grid-column-start: 1;
+     grid-column-end: 1;
+     font-size: 35px;
+     padding-bottom: 50px;
+   }
+   .firstcontent{
+     grid-column-start: 2;
+     grid-column-end: 2;
+     font-size: 20px;
+   }
+   .titles2{
+     grid-column-start: 1;
+     grid-column-end: 2;
+     line-height: 2;
+     font-size: 35px;
+   }
+   .content2{
+     grid-column-start: 2;
+     font-size: 20px;
+     display:block;
+   }
+   .titles3{
+     grid-column-start: 1;
+     grid-column-end: 2;
+     line-height: 2;
+     font-size: 35px;
+   }
+   .content3{
+     grid-column-start: 2;
+     font-size: 20px;
+     display:block;
+   }
+   .gallerycontainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+   .cash{
+     grid-column-start: 1;
+   }
+   .college{
+     grid-column-start: 2;
+   }
+   .credit{
+     grid-column: 3;
+   }
+   .home{
+     grid-column: 1;
+    }
+   .taxation{
+     grid-column: 2;
+   }
+   .business{
+     grid-column: 3;
+   }
+    .auto{
+     grid-column: 1;
+   }
+   .insurance{
+     grid-column: 2;
+   }
+    .paycheck{
+     grid-column: 3;
+   }
+   .individuals{
+     font-size: 24px;
+     padding-bottom: 50px;
+   }
+   .business{
+     font-size: 24px;
+     padding-bottom: 40px;
+   }
+   .tax{
+     font-size: 24px;
+     padding-bottom: 40px;
+   }
+   footer {
+     width: 100%;
+     grid-column-start: 1;
+     grid-column-end: 4;
+     text-align: center;
+     color: white;
+     background-color: darkblue;
+     padding-bottom: 50px;
+   }
+
+   .flip-card {
+     /* background-color: transparent; */
+     width: 255px;
+     height: 255px;
+     border: 1px solid darkblue;
+     perspective: 1000px;
+     grid-column: 3/ span 1;
+   }
+
+    .flip-card-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.8s;
+     transform-style: preserve-3d;
+   }
+
+    .flip-card:hover .flip-card-inner {
+     transform: rotateY(180deg);
+   }
+
+   /* Position the front and back side */
+   .flip-card-front, .flip-card-back {
+     position: absolute;
+     /* width: 100%;
+     height: 100%; */
+     backface-visibility: hidden;
+   }
+
+   /* Style the front side (fallback if image is missing) */
+   .flip-card-front {
+     background-color: #bbb;
+     color: black;
+   }
+
+   /* Style the back side */
+    .flip-card-back {
+     background-color: darkblue;
+     color: white;
+     transform: rotateY(180deg);
+   }
+   form{
+     grid-column: 1 / -1;
+   }
+
+   label{
+     display: inline-block;
+     font-size: 30px;
+   }
+   .contactnav{
+     display: flex;
+     display: inline-flex;
+     color: darkblue;
+   }
+#parallax {
+  background-attachment: fixed;
+  background-image: url(../images/map.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 1500px;
+  grid-column: 1 / span -1;
+}
+/* https://www.w3schools.com/howto/howto_css_parallax.asp */
+}
