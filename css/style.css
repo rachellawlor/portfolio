@@ -114,14 +114,14 @@ footer {
   padding-bottom: 10px;
 }
 .resources{
-  border: 3px solid #6666ff;
-  background-color: #6666ff;
+  border: 3px solid #3333ff;
+  background-color: #3333ff;
   color: white;
   padding-bottom: 10px;
 }
 .contact{
-  border: 3px solid #b3b3ff;
-  background-color: #b3b3ff;
+  border: 3px solid #6666ff;
+  background-color: #6666ff;
   color: white;
   padding-bottom: 10px;
 }
@@ -129,42 +129,41 @@ footer {
   grid-column: 1 / span -1;
   width: 100%,
   color: white;
-  background-color: lightblue;
 }
 
 .professional{
-  border: 3px solid #0000ff;
-  background-color: #0000ff;
+  border: 3px solid #0000cc;
+  background-color: #0000cc;
   color: white;
   padding-bottom: 10px;
 }
 .responsive{
-  border: 3px solid #6666ff;
-  background-color: #6666ff;
+  border: 3px solid  #3333ff;
+  background-color:  #3333ff;
   color: white;
   padding-bottom: 10px;
 }
 .quality{
-  border: 3px solid #b3b3ff;
-  background-color: #b3b3ff;
+  border: 3px solid  #6666ff;
+  background-color:  #6666ff;
   color: white;
   padding-bottom: 10px;
 }
 .individuals{
-  border: 3px solid #0000ff;
-  background-color: #0000ff;
+  border: 3px solid #0000cc;
+  background-color: #0000cc;
   color: white;
   padding-bottom: 10px;
 }
 .business{
-  border: 3px solid #6666ff;
-  background-color: #6666ff;
+  border: 3px solid #3333ff;
+  background-color: #3333ff;
   color: white;
   padding-bottom: 10px;
 }
 .tax{
-  border: 3px solid #b3b3ff;
-  background-color: #b3b3ff;
+  border: 3px solid #6666ff;
+  background-color: #6666ff;
   color: white;
   padding-bottom: 10px;
 }
@@ -177,6 +176,8 @@ footer {
 .form{
   background-color: #0000ff;
   color: white;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
  .gallerycontainer{
@@ -188,14 +189,13 @@ footer {
 
 
 
-div.at-container {
+#animation{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-}
-.at-reach {
-  padding-top: 40px;
+  grid-column-start: 1;
+  padding-top: 10px;
   color: darkblue;
   animation-name: angry-animation;
   animation-duration: 3s;
@@ -213,9 +213,7 @@ div.at-container {
     color:darkblue;
   }
 }
-.map{
-  grid-column-start: 2;
-}
+
 
 
 .cool {
@@ -591,17 +589,12 @@ label{
      transform: rotateY(180deg);
    }
    form{
-     grid-column-start: 1;
-     grid-column-end: 2;
-     text-align: center;
+     grid-column: 1 / -1;
    }
 
    label{
-     grid-column-start: 1;
-     grid-column-end: 2;
      display: inline-block;
-     width: 100%;
-     padding: 5px;
+     font-size: 30px;
    }
    .contactnav{
      color: darkblue;
@@ -615,6 +608,8 @@ label{
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
+  width: 1500px;
+  grid-column: 1 / span -1;
 }
 
 }
