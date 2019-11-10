@@ -17,12 +17,11 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%
+  width: 100%;
+  font-size: 17px;
+  color: darkblue;
 
 }
-/* li{
-  display:block;
-} */
 .nav a{
   color: #f2f2f2;
   text-decoration: none;
@@ -42,16 +41,10 @@ nav a.here{
 }
 .header {
   grid-column: 1 / span 2;
-  /* grid-row: 1 / span 1;  */
   color: darkblue;
   font-size: 20px;
   text-align: center;
 }
- /* .nav {
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 1;
-
-} */
 
 li{
   display: flex;
@@ -84,6 +77,7 @@ footer {
   grid-column-end: -1;
   line-height: 2;
   font-size: 35px;
+  text-align: center;
 }
 .content2{
   grid-column-start: 2;
@@ -137,17 +131,6 @@ footer {
   color: white;
   background-color: lightblue;
 }
-/*
-.firsttitles{
-  grid-column-start: 1;
-  grid-column-end: -1;
-} */
-/* img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 550px;
-} */
 
 .professional{
   border: 3px solid #0000ff;
@@ -192,16 +175,13 @@ footer {
   padding-bottom: 10px;
 }
 .form{
-  border: 3px solid darkblue;
-  background-color: darkblue;
+  background-color: #0000ff;
   color: white;
-  padding-bottom: 10px;
 }
 
  .gallerycontainer{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 300px 300px 300px; */
 }
 
 
@@ -215,6 +195,7 @@ div.at-container {
   height: 100%;
 }
 .at-reach {
+  padding-top: 40px;
   color: darkblue;
   animation-name: angry-animation;
   animation-duration: 3s;
@@ -222,6 +203,7 @@ div.at-container {
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction: normal;
+  font-size: 60px;
 }
 @keyframes angry-animation {
   0%{
@@ -231,22 +213,14 @@ div.at-container {
     color:darkblue;
   }
 }
-
-
-/* .main{
-  grid-column-start: 2;
-  font-size: 20px;
-  background-color: white;
-
-} */
 .map{
   grid-column-start: 2;
-  /* grid-row: 4 / span 1; */
 }
 
 
 .cool {
   color: darkblue;
+  grid-column: 1 / -1;
   font-size: 5em;
   font-weight: bold;
   font-family: Helvetica;
@@ -268,24 +242,201 @@ div.at-container {
 .cool {
   text-align: center;
 }
+/* https://cssnewbie.com/10-beautiful-css-text-effects/#.XcbTc0VKhZ2 */
 
 body {
   background-color: #f1f1f1;
 }
-/* img{
-    width: 75%;
-} */
-/* .pics{
-  display:grid;
-} */
 
+@media only screen and (min-width: 700px) {
+  .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100vw;
+  }
+  .nav a {
+    display: inline-flex;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+    color: darkblue;
+  }
+  li{
+    display: flex;
+    display: inline-flex;
+    padding-bottom: 10px;
+    color: darkblue;
 
+  }
+  .header{
+    grid-column: 1 / span 2;
+    color: darkblue;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .firsttitles{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 35px;
+    padding-bottom: 50px;
+  }
+  .firstcontent{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    font-size: 20px;
+  }
+  .titles2{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    line-height: 2;
+    font-size: 35px;
+    text-align: center;
+  }
+  .content2{
+    grid-column-start: 2;
+    font-size: 20px;
+    display:none;
+  }
+  .titles3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    line-height: 2;
+    font-size: 35px;
+  }
+  .content3{
+    grid-column-start: 2;
+    font-size: 20px;
+    display:block;
+  }
+  .gallerycontainer{
+   display: grid;
+   grid-template-columns: 3fr 3fr;
+ }
+  .cash{
+    grid-column-start: 1;
+  }
+  .college{
+    grid-column-start: 2;
+  }
+  .credit{
+    grid-column-start: : 3;
+  }
+  .home{
+    grid-column-start: 1;
+   }
+  .taxation{
+    grid-column-start: : 2;
+  }
+  .business{
+    grid-column-start: : 3;
+
+  }
+   .auto{
+    grid-column-start: 1;
+  }
+  .insurance{
+    grid-column-start: 2;
+  }
+   .paycheck{
+    grid-column-start: 3;
+  }
+  .individuals{
+    font-size: 24px;
+    padding-bottom: 50px;
+  }
+  .business{
+    font-size: 24px;
+    padding-bottom: 40px;
+  }
+  .tax{
+    font-size: 24px;
+    padding-bottom: 40px;
+  }
+
+  /* .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    grid-column: 1/ span 1;
+    grid-row: 3/ span 1;
+  }
+
+   .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+   .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  /* Style the back side */
+   .flip-card-back {
+    background-color: darkblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+form{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  text-align: center;
+}
+
+label{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+}
+
+}
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: /* Your code here - set to default setting */
+    transition: /* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
  @media only screen and (min-width: 1000px) {
    .container{
      display: grid;
      grid-template-columns: 1fr 2fr 2fr;
-     /* grid-template-rows: 150px 50px 600px 100px;
-     grid-row-gap: 15px; */
      grid-column-gap: 40px;
      width: 100vw;
    }
@@ -306,7 +457,6 @@ body {
 
    .header{
      grid-column: 1 / span 2;
-     /* grid-row: 1 / span 1;  */
      color: darkblue;
      font-size: 30px;
      text-align: center;
@@ -322,18 +472,6 @@ body {
      grid-column-end: 2;
      font-size: 20px;
    }
-   /* .titles{
-     grid-column: 1 / span 1;
-     line-height: 2;
-     font-size: 35px;
-   }
-
-   .content{
-     grid-column-start: 2;
-     font-size: 20px;
-     display: block;
-
-   } */
    .titles2{
      grid-column-start: 1;
      grid-column-end: 2;
@@ -359,44 +497,33 @@ body {
    .gallerycontainer{
     display: grid;
     grid-template-columns: auto auto auto;
-    /* grid-template-columns: 3fr 3fr 3fr; */
-    /* grid-template-rows: 300px 300px 300px; */
   }
    .cash{
      grid-column-start: 1;
-     /* grid-row: 2 /span 1; */
    }
    .college{
      grid-column-start: 2;
-     /* grid-row: 1/ span 1; */
    }
    .credit{
      grid-column: 3;
-    /* grid-row: 1/ span 1; */
    }
    .home{
      grid-column: 1;
-     /* grid-row: 2/ span 1; */
     }
    .taxation{
      grid-column: 2;
-     /* grid-row: 2/ span 1; */
    }
    .business{
      grid-column: 3;
-     /* grid-row: 2/ span 1; */
    }
     .auto{
      grid-column: 1;
-     /* grid-row: 3/ span 1; */
    }
    .insurance{
      grid-column: 2;
-     /* grid-row: 3/ span 1; */
    }
     .paycheck{
      grid-column: 3;
-     /* grid-row: 3/ span 1; */
    }
    .individuals{
      font-size: 24px;
@@ -463,198 +590,31 @@ body {
      color: white;
      transform: rotateY(180deg);
    }
-
-}
-
-@media only screen and (min-width: 700px) {
-  .container{
-    display: grid;
-    grid-template-columns: auto auto;
-    /* grid-template-rows: 150px 50px 600px 100px;
-    grid-row-gap: 15px; */
-    width: 100vw;
-  }
-  .nav a {
-    /* display: inline-flex; */
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 17px;
-    color: darkblue;
-  }
-  li{
-    display: flex;
-    display: inline-flex;
-    padding-bottom: 10px;
-
-  }
-  .header{
-    grid-column: 1 / span 2;
-    /* grid-row: 1 / span 1;  */
-    color: darkblue;
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .firsttitles{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    font-size: 35px;
-    padding-bottom: 50px;
-  }
-  .firstcontent{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    font-size: 20px;
-  }
-  .titles2{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    line-height: 2;
-    font-size: 35px;
-  }
-  .content2{
-    grid-column-start: 2;
-    font-size: 20px;
-    display:block;
-  }
-  .titles3{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    line-height: 2;
-    font-size: 35px;
-  }
-  .content3{
-    grid-column-start: 2;
-    font-size: 20px;
-    display:block;
-  }
-  .gallerycontainer{
-   display: grid;
-   grid-template-columns: 3fr 3fr;
-   /* grid-template-rows: 300px 300px 300px; */
- }
-  .cash{
-    grid-column-start: 1;
-    /* grid-row: 2 /span 1; */
-  }
-  .college{
-    grid-column-start: 2;
-    /* grid-row: 1/ span 1; */
-  }
-  .credit{
-    grid-column-start: : 3;
-   /* grid-row: 1/ span 1; */
-  }
-  .home{
-    grid-column-start: 1;
-    /* grid-row: 2/ span 1; */
+   form{
+     grid-column-start: 1;
+     grid-column-end: 2;
+     text-align: center;
    }
-  .taxation{
-    grid-column-start: : 2;
-    /* grid-row: 2/ span 1; */
-  }
-  .business{
-    grid-column-start: : 3;
-    /* grid-row: 2/ span 1; */
-  }
-   .auto{
-    grid-column-start: 1;
-    /* grid-row: 3/ span 1; */
-  }
-  .insurance{
-    grid-column-start: 2;
-    /* grid-row: 3/ span 1; */
-  }
-   .paycheck{
-    grid-column-start: 3;
-    /* grid-row: 3/ span 1; */
-  }
-  .individuals{
-    font-size: 24px;
-    padding-bottom: 50px;
-  }
-  .business{
-    font-size: 24px;
-    padding-bottom: 40px;
-  }
-  .tax{
-    font-size: 24px;
-    padding-bottom: 40px;
-  }
 
-  .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    grid-column: 1/ span 1;
-    grid-row: 3/ span 1;
-  }
-
-   .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-
-   .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-
-  /* Style the back side */
-   .flip-card-back {
-    background-color: darkblue;
-    color: white;
-    transform: rotateY(180deg);
-  }
-
-form{
-  grid-column: 1;
-  text-align: center;
+   label{
+     grid-column-start: 1;
+     grid-column-end: 2;
+     display: inline-block;
+     width: 100%;
+     padding: 5px;
+   }
+   .contactnav{
+     color: darkblue;
+     display: flex;
+     display: inline-flex;
+   }
+#prof {
+  background-attachment: fixed;
+  background-image: url(../images/map.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
 }
 
-label{
-  grid-column: 1;
-  display: inline-block;
-  width: 100%;
-  padding: 5px;
-}
-}
-@media screen and (prefers-reduced-motion: reduce){
-  html{
-      scroll-behavior: auto; /* Removes scroll animation */
-  }
-
-  .skip a{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: /* Your code here - set to default setting */
-    transition: /* Your code here - set to default setting */
-    z-index: 1;
-  }
-
-  .skip a:focus{
-    top:0;
-  }
 }
